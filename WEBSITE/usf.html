@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="usf1.css"  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <img class="logotipo" src="logo/logo1.jpg" alt="logotipo"> 
+        <nav class="menu">
+            <ul>
+                <li><a href="#">PÁGINA INICIAL</a></li>
+                <li><a href="#" id="quemsomos_drop">QUEM SOMOS</a> 
+                <div id="drop_menu">
+                    <a href="quemsomos.html">Missão,Visão,Valores</a>
+                    <a href="equipa.html">Equipa</a>
+                    <a href="contactos.html">Contactos</a>
+                </div>
+            </li>
+                <li><a href="#" id="quemsomos_drop">O QUE FAZEMOS</a>
+                    <div id="drop_menu">
+                        <a href="atividades.html">Atividades da USF</a>
+                        <a href="consultas.html">Consultas</a>
+                    </div>
+                </li>
+                <li><a href="#" id="quemsomos_drop">INDICADORES</a>
+                    <div id="drop_menu">
+                    <a href="covid.html">Covid-19</a>
+                    <a href="popjovem.html">População jovem</a>       
+                    <a href="tempesper.html">Tempo de espera</a>
+                    <a href="indvit.html">Índice de vitalidade</a>
+                    <a href="medinsc.html">Inscrições por médico</a>
+                    <a href="customed.html">Custo de medicamentos</a>
+                </li>
+                <li><a href="recursos.html" id="quemsomos_drop">RECURSOS</a>
+                    <div id="drop_menu">
+                        <a href="#">Defesa</a>
+                    </div>
+                   
+                <li><a href="#" id="quemsomos_drop">APOIO</a>
+                <div id="drop_menu">
+                    <a href="links.html">Links Úteis</a>
+                    <a href="ligaçoes.html">Linhas de emergência</a>
+                    <a href="pfreq.html">Perguntas frequentes</a>
+                </div>
+                </li>
+            </ul>
+        </nav>
+        <a class="login" id="loginOption" href="login.html"><button class="button_login">Login</button></a>
+        <a class="login" id="logoutOption" style="display: none;" onclick="logOut()"><button class="button_login">Logout</button></a>
+    </div>
+    <img id="imagem" src="Imagens/medico.jpg"
+        style="float:left;object-position: center center; object-fit: cover; width: 100%;" width="100%" height="85%">
+        <div class="corpo_noticia">
+            <div class="noticias_main">
+                <div id="noticia_1">
+                    <h3>Impacto do vírus COVID-19</h3>
+                    <p id="text">"Trabalho com um total de 1241 alunos entre os 9 e os 15 anos revelou um “aumento significativo” dos problemas de saúde mental associados ao fecho e reabertura das escolas".É essencial para os jovens conviverem com os amigos e criarem laços e , por isso , é necessário uma reabertura urgente dos locais de ensino.</p> 
+                    <img id="covid" src="imagens/covid.jpg">
+                </div>
+            
+    
+                <div id="noticia_2">
+                    <h3>Propriedades curativas das algas</h3>
+                    <p id="text">Recentemente , cientistas , descobriram diversas variedades de algas entre as quais algumas possuem propriedades que tornam mais rápida e eficiente a recuperação dos ossos em caso de fratura. Esta é uma descoberta fenomenal para o mundo da medicina e irá certamente melhorar a qualidade de vida dos pacientes.</p>
+                     <img id="alga" src="imagens/alga.jpg">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <footer>
+            <div class="container">
+                <p id="texto_footer">Direitos Autorais @ 2020 Todos os direitos reservados -  USF Coimbra</p>
+            </div>
+        </footer>
+        <script src="login.js"></script>
+</body>
+</html>

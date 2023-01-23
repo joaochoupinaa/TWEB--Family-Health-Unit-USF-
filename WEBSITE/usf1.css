@@ -1,0 +1,912 @@
+html,body {
+   height: 100%;
+   background-size: cover; 
+}
+
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+    background-color: white;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+li , a {
+    font-family: verdana;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration:none;
+}
+
+#header {
+    z-index: 1;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0%;
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    opacity: 80%;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display:inline-block;
+    padding: 1px 20px;
+}
+
+.menu li a:hover {
+    color:red;
+}
+
+.button_login {
+    padding: 9px 25px;
+    background-color: white;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: verdana;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration:underline;
+}
+
+.button_login:hover {
+    color: gray;
+}
+
+.noticias_main {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 60px;
+    line-height: 1.3;
+    text-align: justify; }
+.noticias_main #noticia_1 {
+      position: relative;
+      width: 40%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-left: 5%;
+      margin-right: 10%; }
+.noticias_main #noticia_2 {
+      position: relative;
+      width: 40%;
+      margin-left: auto;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: 5%; }
+.noticias_main h3 {
+      color: #000066;
+      font-size: 2rem;
+      min-height: 36px; 
+      font-family: verdana;
+      text-align: center;
+    }
+.noticias_main p {
+      font-family: Verdana;
+      font-size: 1em; }
+  
+#imagem {
+    margin-top: 8%;
+    
+}
+
+.logotipo {
+    height: 100%;
+    margin-left: 4%;
+}
+
+#alga {
+    max-width: 100%;
+    padding-top: 3em;
+}
+
+#covid {
+    max-width: 100%;
+    padding-top: 3em;
+}
+
+#noticia_1 ,#missao {
+    padding-top: 2em;
+}
+
+#noticia_2 {
+    padding-top: 2em;
+}
+
+#text {
+    padding-top: 2em;
+}
+#quemsomos .TopicBox {
+    width: 0;
+    height: 15em;
+    margin-bottom: 20px;   
+}
+    #quemsomos .TopicBox h3 {
+      color: #000066;
+      font-family: verdana;
+      font-size: 2rem;
+ }
+
+#quemsomos .TopicBox .TextBox,
+#quemsomos .TopicBox img {
+      height: 15em;
+      position: absolute; }
+      #quemsomos .TopicBox .TextBox {
+      text-align: center;
+      width: 50%;
+      left: 2.5%; }
+      #quemsomos .TopicBox img {
+      object-position: center center;
+      object-fit: cover;
+      width: 45%;
+      right: 0px; }
+      #quemsomos :nth-child(odd) .TextBox {
+    right: 2.5%;
+    left: auto; }
+    #quemsomos :nth-child(odd) img {
+    left: 0px; }
+
+    
+ #texto_visao {
+    font-family: Verdana;
+    font-size: 1em;
+ }
+
+ #texto_missao {
+    font-family: Verdana;
+    font-size: 1em;
+ }
+
+ #texto_valores {
+    font-family: Verdana;
+    font-size: 1em;
+ }
+
+
+#titulo_slide {
+    color: #000066;
+    font-family: verdana;
+    font-size: 2rem;
+    margin-left: 27em;
+    }
+
+footer {
+  background-color: #222;
+  width: 100%;
+  padding: 30px 0px; 
+  position:fixed;
+  bottom: 0;
+}
+
+#texto_footer {
+    color:white;
+    background-color: #222
+}
+
+.container {
+    background-color: #222;
+    display: flex;
+    justify-content: space-around;
+}
+
+#quemsomos_drop:hover + #drop_menu{
+    display: block;
+  }
+
+  #drop_recursos:hover + #drop_menu{
+    display: block;
+  }
+
+  
+  #drop_menu a{
+    display: block;
+    padding-bottom: 10px;
+    border: 10px white solid;
+  }
+
+  #drop_menu a:hover{
+    color: gray;
+}
+
+  #drop_menu{
+    display:none;
+    position: absolute;
+    padding-top: 0em;
+    min-width: 150px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9999;
+  }
+  
+  #drop_menu:hover{
+    display: block;
+  }
+
+.imagem_valores {
+    border-radius: 10px 10px 10px 10px;
+}
+
+#footer_logo {
+    height: 3em;
+    width: 10em;
+}
+
+
+.main_contactos {
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 45em;
+    display: flex;
+    background-image: url("Imagens/contactos.jpg");
+}
+
+.main_contactos .main_percentagem {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.main_contactos .main_percentagem .contactos {
+    padding:0;
+    margin: 0;
+    width: 40%;
+    height: 40em;
+    display: flex;
+    position: relative;
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+.main_contactos .main_percentagem .contactos h2 {
+    opacity: 1;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: transparent;
+    color:#000066;
+}
+
+.main_contactos .main_percentagem .contactos h1 {
+    padding-top: 0.5%;
+    font-size: 2rem;
+    opacity: 1;
+    background-color: transparent;
+    color:#000066;
+}
+
+.main_contactos .main_percentagem .contactos a {
+    opacity: 0.9;
+}
+    
+.main_contactos .main_percentagem .align {
+    position: relative;
+    padding-top: 20%;
+    background-color: transparent;
+}
+  
+#texto_contactos {
+    font-size: 135%;
+    color: white;
+    background-color: transparent;
+}
+
+.main_contactos .main_percentagem .mapa {
+    width: 60%;
+    height: 85%;
+    display: flex;
+    position: relative;
+    margin-top: 7em;
+}
+
+#links_uteis {
+    padding-top: 7em;
+    padding-left: 20em;
+    font-family: verdana Condensed;
+    letter-spacing: 0.5px;
+    color:rgb(37,37,37);
+    text-decoration: underline gray;
+}
+
+
+#links_all {
+    padding-top: 6em;
+    padding-left: 3em;
+    text-decoration: underline gray;
+}
+
+#sns , #dgs {
+    padding-top: 4em;
+}
+
+.main_emergencia {
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 45em;
+    display: flex;
+    background-image: url("Imagens/linha_eme.jpg");
+    padding-bottom: 25em;
+}
+
+.main_emergencia .main_perc {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.main_emergencia .main_perc .linhas {
+    padding:0;
+    margin: 0;
+    width: 40%;
+    height: 40em;
+    display: flex;
+    position: relative;
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+.main_emergencia .main_perc .linhas h3 {
+    opacity: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: transparent;
+    color:#000066;
+}
+
+
+.main_emergencia .main_percentagem .contactos a {
+    opacity: 0.9;
+}
+    
+.main_emergencia .main_perc .eme {
+    position: relative;
+    padding-top: 20%;
+    background-color: transparent;
+}
+
+.texto_emergencia {
+    background-color: transparent;
+    font-family: verdana;
+}
+
+#equipa {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo_equipa {
+    font-family: verdana;
+    font-size: 1.5em;
+    color:#000066;
+    padding-bottom: 2em;
+    padding-right: 4em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3rem;
+    padding-top: 3rem;
+}
+
+.fotos img {
+    width: 10em;
+    height: 10em;
+    border-radius: 30%;
+    position: center;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.fotos strong {
+    font-weight: 400;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-family: verdana;
+}
+
+.fotos p {
+    font-size: 0.8rem;
+    font-family: verdana;
+    margin: 5px 0px;
+}
+
+.perguntas_muito_freq {
+    background-image: url("Imagens/perg_freq_3.jpg");
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perg {
+    background-color: transparent;
+    padding-left: 5em;
+    padding-top: 5em;
+}
+
+.perg h2 {
+    background-color: transparent;
+    font-family:verdana;
+    color:#000066;
+    font-size: 1.3em;
+}
+
+.text_perg {
+    background-color: transparent;
+    font-size: 110%;
+    font-family: verdana;
+}
+
+
+
+#titulo_vacina {
+    padding-top: 9em;
+    padding-left: 25em;
+    font-family: verdana;
+    color:#000066;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.slider-frame {
+    overflow: hidden;
+    height: 650px;
+    width: 800px;
+    margin-left: 700px;
+    padding-bottom: 10em;
+
+    
+  }
+  
+  @-webkit-keyframes slide_animation {
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}   
+  }
+  
+  .slide-images {
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: right;
+    -webkit-animation-play-state: running;
+    }
+  
+  .img-container {
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+  
+  }
+  
+
+.texto_atividades h1 {
+    padding-top: 5em;
+    padding-left: 4.7em;
+    font-family: verdana;
+    color:#000066;
+    text-decoration: underline;
+}
+
+
+.texto_atividades h3 {
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+.texto_atividades p {
+    font-family: verdana;
+    padding-left: 10em;
+    padding-top: 1em;
+    text-decoration: underline;
+}
+
+#sites:hover {
+    color: lightsalmon;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+    background-color: #75C4E3;
+    padding-top: 7em;
+}
+
+.contact-form {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    background-color: #17272D;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    background-color: #17272D;
+}
+
+.medicos {
+    background-color: #17272D;
+}
+
+.input-fields, .msg {
+    width: 48%;
+    background-color: #17272D;
+
+}
+
+.input-fields .input, .msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color:#c5ecfd ;
+    font-family: verdana;
+    width: 100%;
+}
+
+.msg textarea {
+    height: 212px;
+}
+
+::-webkit-input-placeholder {
+    color:#c5ecfd;
+    font-family: verdana;
+}
+
+::-moz-input-placeholder {
+    color: #c5ecfd;
+    font-family: verdana;
+}
+
+::-ms-input-placeholder {
+    color: #c5ecfd;
+    font-family: verdana;
+}
+
+.btn {
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .msg textarea {
+        height: 80px;
+    }
+
+    .input-fields, .msg {
+        width: 100%;
+    }
+}
+
+label {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+    font-family: Verdana;
+    font-size: 13px;
+}
+
+#body_2 {
+    background-color: #75C4E3;
+}
+
+
+#formulario{
+    color:#FFFFFF;
+    padding: 0.8em;
+  }
+
+#mensagem{
+    background-color: #17272D;
+    border-radius: 1em;
+    padding:1em;
+  }
+
+#mensagem h2{
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    color: #c5ecfd;
+    background-color: #17272D;
+    font-family: verdana;
+  }
+
+#mensagem label{
+    color: #c5ecfd;
+    font-family: verdana;
+    font-weight: 150;
+    padding-top: 0.8em;
+    display: flex;
+    font-family: verdana;
+  }
+
+#mensagem input{
+    padding: 0.8em;
+    border-radius: 0.4em;
+    border-width: 0.05em;
+    width: 20%;
+  }
+
+#enviar {
+    background-color: #39b7dd;
+    color:white;
+    margin-top: 1.5em;
+    padding: 0.8em;
+  }
+
+#mensagem textarea{
+    box-sizing: border-box;
+    padding: 0.8em;
+    border-radius: 0.4em;
+    border-width: 0.05em;
+    width: 100%;
+  }
+
+
+  .conteudo{
+    margin-bottom: 1em;
+    font-family: verdana;
+    background-color:#CAB3CF;
+    padding-top: 15px;
+ }
+
+
+  .collapse {
+    background-color: #17272D;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+  }
+
+
+
+
+  .collapse-container{
+    padding-top: 15em;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: transparent;
+  }
+  .collapse:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #CAB3CF;
+    margin-bottom: 1em;
+  }
+
+ 
+#bodyrecursos {
+    background-image: url("Imagens/recursos.jpg");
+}
+
+.rec {
+    background-color: #CAB3CF;
+    text-decoration: underline;
+    color: purple;
+}
+
+#h2_covid {
+    padding-left: 27em;
+    font-family: verdana;
+    color:#4682B4;
+}
+
+#texto_covid {
+    font-family: verdana;
+    color:#777;
+    padding-left: 3em;
+}
+
+#span_covid {
+    padding-left: 3em;
+}
+
+#h2_covid2 {
+    padding-left: 19em;
+    font-family: verdana;
+    color:#4682B4;
+}
+
+#a_covid {
+    padding-left: 3em;
+    color:#0000CD;
+}
+
+#h2_jovem {
+    font-family: verdana;
+    color:#4682B4;
+    padding-left: 28em;
+}
+
+#texto_jovem {
+    font-family: verdana;
+    color:#777;
+    padding-left: 3em;
+}
+
+#span_jovem1 {
+    padding-left: 3em;
+}
+
+#h2_jovem2 {
+    padding-left: 19em;
+    font-family: verdana;
+    color:#4682B4;
+}
+
+#h2_espera {
+    padding-left: 29em;
+    font-family: verdana;
+    color:#4682B4;
+}
+
+#texto_espera {
+    font-family: verdana;
+    color:#777;
+    padding-left: 3em;
+}
+
+#span_espera {
+    padding-left: 3em;
+}
+
+#h2_espera2 {
+    font-family: verdana;
+    color:#4682B4;
+    padding-left: 18em;
+}
+
+#h2_vit {
+    font-family: verdana;
+    color:#4682B4;
+    padding-left: 28em;
+}
+
+#texto_vit {
+    font-family: verdana;
+    color:#777;
+    padding-left: 3em;
+}
+
+#span_vit {
+    padding-left: 3em;
+}
+
+#h2_vit2 {
+    font-family: verdana;
+    color:#4682B4;
+    padding-left: 20em;
+}
+
+#h2_insc {
+    font-family: verdana;
+    color:#4682B4;
+    padding-left: 27em;
+}
+
+#texto_insc {
+    font-family: verdana;
+    color:#777;
+    padding-left: 3em;
+}
+
+#h2_insc2 {
+    font-family: verdana;
+    color:#4682B4;
+    padding-left: 19em;
+}
+
+#h2_med {
+    font-family: verdana;
+    color:#4682B4;
+    padding-left: 28.3em;
+}
+
+#texto_med {
+    font-family: verdana;
+    color:#777;
+    padding-left: 3em;
+}
+
+#span_med {
+    padding-left: 3em;
+}
+
+#h2_med2 {
+    font-family: verdana;
+    color:#4682B4;
+    padding-left: 20em;
+}

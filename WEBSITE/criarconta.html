@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css" type="text/css"  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login_caixa">
+        <a href="usf.html"><img src="imagens/login.jpg" class="login_imagem" ></a>
+         <h1 id="cria_conta">Criar conta</h1>
+         <form id="register" onsubmit="registerAccount(event)">
+             <p>Nome de utilizador:</p>
+             <input type="text" name="username" placeholder="username" required minlength="3">
+             <p>Email:</p>
+             <input type="email" name="email" placeholder="email@email.com" required>
+             <p>Password:</p>
+             <input type="password" name="password" placeholder="password" required minlength="3">
+             <p>Age:</p>
+             <input type="idade" name="age" required>
+             <br>
+             <input type="submit" name="regBtn" value="Register">
+             <br>
+             <br>
+             <br>
+             <br>
+         </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="usf1.css"  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body_2">
+    <div id="header">
+        <img class="logotipo" src="logo/logo1.jpg" alt="logotipo"> 
+        <nav class="menu">
+            <ul>
+                <li><a href="usf.html">PÁGINA INICIAL</a></li>
+                <li><a href="#" id="quemsomos_drop">QUEM SOMOS</a> 
+                <div id="drop_menu">
+                    <a href="quemsomos.html">Missão,Visão,Valores</a>
+                    <a href="equipa.html">Equipa</a>
+                    <a href="contactos.html">Contactos</a>
+                </div>
+            </li>
+            <li><a href="#" id="quemsomos_drop">O QUE FAZEMOS</a>
+                <div id="drop_menu">
+                    <a href="atividades.html">Atividades da USF</a>
+                    <a href="#">Consultas</a>
+                </div>
+            </li>
+            <li><a href="#" id="quemsomos_drop">INDICADORES</a>
+                <div id="drop_menu">
+                <a href="covid.html">Covid-19</a>
+                <a href="popjovem.html">População jovem</a>       
+                <a href="tempesper.html">Tempo de espera</a>
+                <a href="indvit.html">Índice de vitalidade</a>
+                <a href="medinsc.html">Inscrições por médico</a>
+                <a href="customed.html">Custo de medicamentos</a>
+            </li>
+                <li><a href="recursos.html">RECURSOS</a></li>
+                <li><a href="#" id="quemsomos_drop">APOIO</a>
+                <div id="drop_menu">
+                    <a href="links.html">Links Úteis</a>
+                    <a href="ligaçoes.html">Linhas de emergência</a>
+                    <a href="pfreq.html">Perguntas frequentes</a>
+                </div>
+                </li>
+            </ul>
+        </nav>
+        <a class="login" id="loginOption" href="login.html"><button class="button_login">Login</button></a>
+        <a class="login" id="logoutOption" style="display: none;" onclick="logOut()"><button class="button_login">Logout</button></a>
+    </div>
+    <form>
+    <div class="wrapper">
+        <div class="contact-form">
+            <div class="input-fields">
+                <input type="text" class="input" placeholder="Nome" required="required">
+                <input type="text" class="input" placeholder="Género" required="required">
+                <input type="text" class="input" placeholder="CC" required="required">
+                <input type="text" class="input" placeholder="Idade" required="required">
+                <input type="text" class="input" placeholder="Email" required="required">
+                <input type="text" class="input" placeholder="Morada" required="required">
+            </div>
+            <div class="medicos">
+                <label class="name">Médicos:</label>
+                <select class="option" name="Medicos">
+                <option disabled="disabled" selected="selected">Escolha um médico</option>
+                <option>João André</option>
+                <option>Carla Vieira</option>
+                <option>Sónia Lima</option>
+                <option>Adelaide Alexandrino</option>
+                <option>Maria Cortesão</option>
+                <option>Sara Correia</option>
+                <option>Emília Correia</option>
+                </select>
+                </div>
+            <div class="msg">
+                <textarea placeholder="Mensagem" required="required"></textarea>
+                <input type="submit" value="Marcar consulta" id="enviar">
+        </div>
+        </div>
+    </div>
+</form>
+    <br>
+    <br>
+    
+    <footer>
+        <div class="container">
+            <p id="texto_footer">Direitos Autorais @ 2020 Todos os direitos reservados -  USF Coimbra</p>
+        </div>
+    </footer>
+
+</body>
+</html>

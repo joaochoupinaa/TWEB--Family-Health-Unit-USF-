@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="usf1.css"  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <img class="logotipo" src="logo/logo1.jpg" alt="logotipo"> 
+        <nav class="menu">
+            <ul>
+                <li><a href="usf.html">PÁGINA INICIAL</a></li>
+                <li><a href="#" id="quemsomos_drop">QUEM SOMOS</a> 
+                <div id="drop_menu">
+                    <a href="quemsomos.html">Missão,Visão,Valores</a>
+                    <a href="equipa.html">Equipa</a>
+                    <a href="contactos.html">Contactos</a>
+                </div>
+            </li>
+                <li><a href="#" id="quemsomos_drop">O QUE FAZEMOS</a>
+                    <div id="drop_menu">
+                        <a href="atividades.html">Atividades da USF</a>
+                        <a href="consultas.html">Consultas</a>
+                    </div>
+                </li>
+                <li><a href="#" id="quemsomos_drop">INDICADORES</a>
+                    <div id="drop_menu">
+                    <a href="covid.html">Covid-19</a>
+                    <a href="popjovem.html">População jovem</a>       
+                    <a href="tempesper.html">Tempo de espera</a>
+                    <a href="indvit.html">Índice de vitalidade</a>
+                    <a href="medinsc.html">Inscrições por médico</a>
+                    <a href="customed.html">Custo de medicamentos</a>
+                </li>
+                <li><a href="recursos.html">RECURSOS</a></li>
+                <li><a href="#" id="quemsomos_drop">APOIO</a>
+                <div id="drop_menu">
+                    <a href="links.html">Links Úteis</a>
+                    <a href="ligaçoes.html">Linhas de emergência</a>
+                    <a href="pfreq.html">Perguntas frequentes</a>
+                </div>
+                </li>
+            </ul>
+        </nav>
+        <a class="login" id="loginOption" href="login.html"><button class="button_login">Login</button></a>
+        <a class="login" id="logoutOption" style="display: none;" onclick="logOut()"><button class="button_login">Logout</button></a>
+    </div>
+    
+    <div class="main_contactos">
+        <div class="main_percentagem">
+            <div class="contactos">
+                <div class="align">
+                    <h2>Fale connosco</h2>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1>Sede:</h1>
+                    <txt id="texto_contactos">Av. Dom Afonso Henriques 141, 3000-011 Coimbra</txt>
+                    <h1>Telefone:</h1>
+                    <txt id="texto_contactos">239962378</txt>
+                    <h1>Email:</h1>
+                    <txt id="texto_contactos">usfcoimbra@sapo.pt</txt>
+                    <h1>Fax:</h1>
+                    <txt id="texto_contactos">239087429</txt>
+                    <h1>Horário atendimento:</h1>
+                    <txt id="texto_contactos">Dias úteis - 8h às 20h<br>
+                        Fins de semana e feriados - 8h às 15h</txt>
+                </div>
+            </div>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.838563021157!2d-8.41525678474884!3d40.21265387938944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f913860350d1%3A0x9ee022b82d9b7b8d!2sUSF%20CoimbraCelas!5e0!3m2!1spt-PT!2spt!4v1607683979548!5m2!1spt-PT!2spt"
+                    width="100%" height="95%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="formulario">
+        <form method="post" id="mensagem">
+
+                <h2>Fale connosco</h2>
+
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required="required"/>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required="required"/>
+
+                <label for="subject">Mensagem</label>
+                <textarea id="subject" name="subject"style="height:90px"></textarea>
+                <input type="submit" value="Enviar" id="enviar">
+            </form>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+        <div class="container">
+            <p id="texto_footer">Direitos Autorais @ 2020 Todos os direitos reservados -  USF Coimbra</p>
+        </div>
+    </footer>
+</body>
+</html>
+
